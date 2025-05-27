@@ -67,7 +67,7 @@ class _AnimalMocaTestPageState extends State<AnimalMocaTestPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('กรอกชื่อสัตว์ให้ถูกต้อง'),
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.blue,
         automaticallyImplyLeading: false,
       ),
       body:
