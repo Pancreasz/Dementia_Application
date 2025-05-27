@@ -101,7 +101,7 @@ class _SelectImagesPageState extends State<SelectImagesPage> {
     return Scaffold(
       appBar: AppBar(
         title: Center(
-          child: Text('เลือกรูปภาพ \n ถ้าหากช่องสี่เหลี่ยมไม่ครบ 5 ช่องกรุณาเอียงจอเป็นแนวนอน', style: TextStyle(fontSize: 20)),
+          child: Text('ถ้าหากช่องสี่เหลี่ยมไม่ครบ 5 ช่องกรุณาเอียงจอเป็นแนวนอน', style: TextStyle(fontSize: 20)),
         ),
         centerTitle: true,
         automaticallyImplyLeading: false,
