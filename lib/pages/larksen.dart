@@ -275,11 +275,11 @@ class _GameScreenState extends State<GameScreen> {
       context: context,
       builder:
           (context) => AlertDialog(
-            title: Text(passed ? 'สำเร็จ!' : 'ลองอีกครั้ง'),
+            title: Text(passed ? '' : ''),
             content: Text(
               passed
-                  ? 'ทำได้ดี! คุณต่อจุดทั้งหมดถูกต้อง!'
-                  : 'คำตอบไม่ถูกต้อง โปรดตรวจสอบ:\n1. ต่อจุดตามลำดับ\n2. ไม่มีเส้นทับกัน\n3. ไม่ยกนิ้วขณะลากเส้น',
+                  ? 'กด "ตกลง" เพื่อไปแบบทดสอบต่อไป'
+                  : 'กด "ตกลง" เพื่อไปแบบทดสอบต่อไป',
             ),
             actions: [
               TextButton(
@@ -330,7 +330,7 @@ class _GameScreenState extends State<GameScreen> {
                   const SizedBox(height: 12),
                   _buildInstructionRow('2. ห้ามลากเส้นทับกัน'),
                   const SizedBox(height: 12),
-                  _buildInstructionRow('3. ห้ามยกนิ้วขณะลากเส้นระหว่างจุด'),
+                  _buildInstructionRow('3. เมื่อลากเส้นเชื่อมจุดแล้วกรุณายกนิ้วขึ้นแล้วลากเส้นต่อไป'),
                   const SizedBox(height: 20),
                 ],
               ),
@@ -461,7 +461,7 @@ class _GameScreenState extends State<GameScreen> {
               right: 0,
               child: Center(
                 child: Text(
-                  gameResult! ? 'สำเร็จ!' : 'ลองอีกครั้ง',
+                  gameResult! ? '' : '',
                   style: TextStyle(
                     color: gameResult! ? Colors.green : Colors.red,
                     fontSize: 24,
