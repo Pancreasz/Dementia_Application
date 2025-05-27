@@ -57,7 +57,7 @@ class _AttentionTestPageState extends State<AttentionTestPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text("แบบทดสอบลบเลข"),
-        backgroundColor: Colors.blue,
+        backgroundColor: Color.fromARGB(255, 87, 152, 225),
         automaticallyImplyLeading: false,
       ),
       body: Padding(

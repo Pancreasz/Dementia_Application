@@ -181,7 +181,7 @@ class _ClockTestPageState extends State<ClockTestPage> {
       ),
       floatingActionButton: SpeedDial(
         animatedIcon: AnimatedIcons.menu_close,
-        backgroundColor: Colors.blue,
+        backgroundColor: Color.fromARGB(255, 87, 152, 225),
         overlayOpacity: 0.3,
         children: [
           SpeedDialChild(

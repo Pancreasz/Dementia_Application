@@ -392,7 +392,7 @@ class _GameScreenState extends State<GameScreen> {
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.white),
         ),
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 69, 123, 184),
+        backgroundColor: Color.fromARGB(255, 87, 152, 225),
         elevation: 10,
         actions: [
           Padding(
